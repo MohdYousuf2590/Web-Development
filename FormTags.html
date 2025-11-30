@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .innerfieldset{
+               padding: 70px 70px 70px 70px;
+                margin: 10px;
+                align : center;
+                border-radius: 35px;
+                border-width: 3px;
+                
+                border-left-style: double;
+                border-left-color: aqua;
+                border-right-style: double;
+                border-right-color: aqua;
+                border-bottom-style: double;
+                border-bottom-color: aqua;
+                border-top-style: double;
+                border-top-color: aqua;
+            }
+        .firstfield {
+                padding: 40px 40px 40px 40px;
+                margin: 350px;
+                align : center;
+                border-radius: 35px;
+                border-width: 30px;
+                
+                border-left-style: double;
+                border-left-color: aqua;
+                border-right-style: double;
+                border-right-color: aqua;
+                border-bottom-style: double;
+                border-bottom-color: aqua;
+                border-top-style: double;
+                border-top-color: aqua;
+                
+            }
+            .button1 {
+            text-decoration-style: double;
+            height: 30px;
+            width: 120px; 
+            border-radius: 20px;
+            border: 2px solid black;
+            background-color: aqua;
+            
+                                }
+    .bg-image{
+                background-image: url("image4.jpg") 
+    }
+
+    ::placeholder{
+        color: darkseagreen;
+    }
+    </style>
+</head>
+
+
+            <div class="bg-image">
+<h1>1st Form creation</h1>
+<h2>www.google.com</h2>
+
+    <body>
+        <form>
+    <fieldset class="firstfield" style="background-color: lightcoral"><legend style="font-size: 50px;">Sign Up form</legend> 
+        <br/>
+
+     <!--By using placeholder attribute we can insert temporary text suggestion textbox in a form-->   
+        
+    <!--its create container like structure in selected area in a form and we label that container by using legend tag-->
+    <fieldset class="innerfieldset"><legend style="font-size: 150%" >Login detail</legend> 
+       
+    <!--its create labels on any input tag by using input type ID-->    
+    <label for="login">Login ID:</label>
+
+    <!--this create text box in a form if we specify type=text its by default put text only-->
+    <input type="text" id="login" placeholder="Enter login ID">
+<br/>
+<br/>
+    <!--its create password tab to enter password in secure douted form-->
+    <label for="password1">Enter password:</label>
+    <input type="password" id="password1" name="password" placeholder="Enter Password">
+<br/>
+<br/>
+    <label for="password2">Conform password:</label>
+    <input type="password" id="password2" name="password" placeholder="Re-enter password">
+<br/>
+</fieldset>
+<br/>
+<fieldset class="innerfieldset"><legend style="font-size: 150%" >Contact detail</legend> 
+  <br/>
+  <!--its crate email tab in a form-->
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter email">
+<br/>
+<br/>
+ <!--its create phone tab & by using pattern attribute we can ask only accept required format of mobile number -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" placeholder="Enter phone number" pattern="[0-9]{2}[0-9]{10}" required>
+    <small>Format: 91-0123456789</small>
+<br/>   
+<br/>
+<!-- its create url tab to insert url-->
+<label for="website">LinkedIn URL:</label>
+    <input type="url" id="website" placeholder="Enter linkIn url">
+<br/>
+</fieldset>
+<br/>
+<fieldset class="innerfieldset" ><legend style="font-size: 150%" >Personal detail</legend> 
+    <br/>
+    <br/>
+     <label for="gender">Select Gender</label>
+<br/>   
+ <!-- its create o radio button by using same id names we can manage select all, select once-->
+        <input type="radio" id="gender1" name="gender" value="male">
+        <label for="gender1">Male</label>
+
+        <input type="radio" id="gender2" name="gender" value="female">
+        <label for="gender2">Female</label>
+
+        <input type="radio" id="gender3" name="gender" value="Not disclose">      
+        <label for="gender3">Not to say</label>
+<br/>
+<br/>
+        <label for="count">Select age:</label>
+        <input type="number"    id="count" name="counter" min="0" max="100"> 
+<br/>
+<br/>
+
+<!--its create date tab where we can select date in small calender-->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob">    
+<br/>   
+<br/>
+<!--its allow as to upload any file in webpage-->
+    <label for="file1">Upload Resume</label>
+    <input type="file" name="fileone" id="file1">
+<br/>
+<br/>
+<!--its allow as to upload any image in webpage-->
+    <label for="image1">Insert Image:</label>
+    <input type="image" name="image1" id="image1" src="photo1.png" alt="image" height="40px" width="40px">
+<br/>
+<br/>
+<!--its create extra text area instead on one to input likes: comment, address etc-->
+     <label for:"address">Enter Address:</label>
+    <textarea id="address" rows="4" col="3" placeholder="Enter address here"></textarea>
+<br/>
+<br/>
+<!--its create a selection list where we allow more option by using option tag-->
+    <label for="country">Select Country</label>
+  <select id="country">
+    <option value=""> --select country--</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Canada">Canada</option>
+    <option value="Australia">Australia</option>
+  </select>    
+<br/>
+<br/>   
+
+<!--its also create a selection list but allow multiple option selection by using multiple attribute-->
+    <label for="language">Select Languages:</label> 
+<br/>
+    <label for="language">(press ctrl for multiple selection)</label>
+    <select id="language" multiple size="3" style="width: 150px;">
+        
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Arabic">Arabic</option>
+        <option value="French">French</option>
+        <option value="Korean">Korean</option>
+        <option value="Spanish">Spanish</option>
+    </select>
+    <br/>
+<br/>
+    <label for="state">Select State</label>
+    <select id="state">
+        <option value=""> --select state--</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Tamil Naidu">Tamil Naidu</option>
+    </select>
+<br/>
+<br/>
+
+<!--its create checkbox-->
+    <input type="checkbox" id="terms" name="terms">       
+        <label for="terms">Accept Terms and Conditions</label>
+    </fieldset>
+<br/>
+
+<!--its create buttons or submits button-->
+        <input type="submit" name="Button" id="button1" value="Submit Form">
+        <!--Another way
+         <button>class="button1">Submit</button>
+</-->
+        </fieldset>
+<br/>
+</form>
+</body>
+</div>
+
+
+
+
+
+           
+<body>
+    <form>
+<h1> 2nd Form creation</h1>
+<h1 align="center">Novel Services Login</h1>
+<fieldset>
+<label for:"user1">User Name :</label>
+<input type="text" id="user1" Name="user" placeholder="Enter the Name..">
+<br/>
+<br/>
+<label for:"pass1">User password :</label>
+<input type="password" id="pass1" Name="password" placeholder="Enter the Password..">
+<br/>
+<br/>
+<label for:"city">City of Employment :</label>
+<input type="text" id="city1" Name="city" placeholder="Employment city..">
+<br/>
+<br/>
+<label for:"server1">Web Server :</label> 
+<select id="server1" placeholder="choose a Server">
+    <option value=""> --choose a server--</option>
+    <option value="America">America</option>
+    <option value="Australia"> Australia</option>
+    <option value="japan"> japan</option>
+    <option value="Africa"> Africa</option>
+    <option value="Asia"> Asia</option>
+    <option value="China"> china</option>
+</select>
+<br/>
+<br/>
+<label for="">PLease specify the role:</label>
+<br/>
+<input type="radio" id="radio1" name="role">
+<label for="radio1">Admin</label>
+<br/>
+<input type="radio" id="radio1" name="role">
+<label foe="radio1">Engineer</label>
+<br/>
+<input type="radio" id="radio1" name="role">
+<label foe="radio1">Manager</label>
+<br/>
+<input type="radio" id="radio1" name="role">
+<label foe="radio1">Admin</label>
+<br/>
+
+<label>Single Sign-on to the following:</label>
+<br/>
+<input type="checkbox" id="mail1" name="mail">
+<label for="mail1">Mail</label>
+<br/>
+<input type="checkbox" id="Payroll1" name="Payroll">
+<label for="mail1">Payroll</label>
+<br/>
+<input type="checkbox" id="service1" name="Service">
+<label for="Service1">Self-Service</label>
+<br/>
+<button id="login1">Login</button>
+<button id="Reset1">Reset</button>
+</fieldset>
+</form>
+</body>
+</html>

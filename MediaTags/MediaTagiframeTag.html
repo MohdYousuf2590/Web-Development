@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #image1 {
+        border-style:solid;
+        border-width:5px;
+    }
+    #audio2 {
+        border-style:solid;
+        border-width:5px;
+    }
+    #video1 {
+        border-style:solid;
+        border-width:5px;
+        
+    }
+</style>
+</head>
+<body>
+    
+<section id="image1">
+<hr><h2>Image tag in media</h2>
+    <img src ="photo2.jpeg" height="300" width="400" alt="image is loading..." loading="lazy">
+<br/><hr>
+</section>
+
+<section id="audio">
+    <hr>
+    <!--audio tag has some attribute like autoplay, muted which perform certain actions on web-->
+<h2>Audio Tag with controls attribute</h2>
+<audio src="audio1.mp3" controls autoplay muted></audio> 
+<br><hr>
+<!--another method for adding audio-->
+<audio id="first"  controls autoplay muted>
+    <source src="audio1.mp3" type="audio/mp3">
+</audio> <hr> 
+</section>
+      
+<section id="video1">
+    <hr>
+        <!--video tag has also some attribute like autoplay, muted which perform certain actions on web-->
+    <h2>video tag with controls attribute</h2>
+<video id="video1" src="video1.mp4" height="400px" width="400px" controls autoplay muted>video</video>
+<br/> <hr>
+        <!-- Another method of video tag-->
+<video id="video1"  height="300px" width="300px" controls autoplay muted>
+    <source src="video2.mp4" type="video/mp4">   
+</video> <br/><hr>
+</section>
+
+<section id="frame1"><hr>
+    <h2>iframe tag used to allocated other website content in our current website using embed attribute</h2>
+<iframe id="frame1" src="Project1inHTML.html" height="600" width="700"> </iframe>
+<br/><hr>
+<iframe id="frame1" src="MediaTagiframeTag.html" height="600" width="800"> </iframe>
+<hr>
+<iframe id="frame1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15226.625317567281!2d78.4429080240794!3d17.428272964297303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90cd7708dfd7%3A0x77482b7aa8b696f3!2sMuffakham%20Jah%20College%20of%20Engineering%20%26%20Technology%20(MJCET)!5e0!3m2!1sen!2sin!4v1750138740466!5m2!1sen!2sin"
+width="400" height="350" loading="lazy" ></iframe>
+<br/><hr>
+<!--instead of watch?v=  we need to write embed/  https://www.youtube.com/watch?v=n3HmeKwBHHA   -->
+<iframe id="frame1" src="https://www.youtube.com/embed/n3HmeKwBHHA?autoplay=1&mute=1" height="300px" width="350px"></iframe>
+<hr>
+</section>
+
+</body>
+</html>

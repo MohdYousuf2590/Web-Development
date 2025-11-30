@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+<h1> 1st table </h1>
+    <!--table>(tr>(th)>td*5)*3   shortcut to create tables this sequences create table with 3 row each row has 5 data elements-->
+    <table border="5px" style="color: aquamarine;">
+        <tbody>
+        <tr>
+            <th>Name:         </th>
+            <td>Nitish     </td>
+            <td>Ravi     </td>
+            <td>Nikhil     </td>
+            <td>Ayush    </td>
+            <td>Rohit    </td>
+        </tr>
+        <tr>
+            <th>Subjects:     </th>
+            <td>Maths    </td>
+            <td>Science  </td>
+            <td>Computers</td>
+            <td>Physics  </td>
+            <td>Big Data </td>
+        </tr>
+        <tr>
+            <th>Score:         </th>
+            <td>  65</td>
+            <td>  67</td>
+            <td>  55</td>
+            <td>  78</td>
+            <td>  81</td>
+        </tr>
+    </tbody>
+    </table> 
+    <br>
+<h1> 2nd table </h1>
+<!--one more table-->    
+            <table border="10px" style="color:grey">
+            <tbody>
+                <tr>
+                    <th>        </th>
+                    <th>student1</th>
+                    <th>student2</th>
+                    <th>student3</th>
+                    <th>student4</th>
+                    <th>student5</th>
+                </tr>
+        <tr>
+            <th>Name:         </th>
+            <td>Nitish     </td>
+            <td>Ravi     </td>
+            <td>Nikhil     </td>
+            <td>Ayush    </td>
+            <td>Rohit    </td>
+        </tr>
+        <tr>
+            <th>Subjects:     </th>
+            <td>Maths    </td>
+            <td>Science  </td>
+            <td>Computers</td>
+            <td>Physics  </td>
+            <td>Big Data </td>
+        </tr>
+        <tr>
+            <th>Score:         </th>
+            <td>  65</td>
+            <td>  67</td>
+            <td>  55</td>
+            <td>  78</td>
+            <td>  81</td>
+        </tr>
+    </tbody>
+    </table> 
+
+<!--one more table-->
+
+<h1> 3rd table </h1>
+    <h2>creating table with some custom block by using --colspan, --rowspan</h2>
+    <table border="25"; style="color:blue";>
+        <thead style="font-size: 250%;">
+            <th>s.no</th>
+            <th>name</th>
+            <th>subject</th>
+            <th>marks</th>
+        </thead>
+        <tbody style="color: cornflowerblue">
+            <tr style="font-size:150%">
+                <td>.1</td>
+                <td>rohit</td>
+                <td>maths</td>
+                <td rowspan="2" >89</td>
+            </tr>
+            <tr style="font-size:150%">
+                <td>.2</td>
+                <td>ramesh</td>
+                <td>maths</td>
+            </tr>
+            <tr style="font-size:150%">
+                <td>.3</td>
+                <td>roni</td>
+                <td>maths</td>
+                <td>69</td>
+            </tr>
+            <tr style="font-size:150%">
+                <!--colspan attribute is used to occupied vertical column cells-->
+                <!--rowspan attribute is used to occupied horizontal row cells-->
+                <td colspan="3">total</td>
+                <td> 217</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--one more table - 3--> 
+<h1>4th table </h1>
+<table border="20px" style="color:greenyellow;">
+    <thead style="font-size: 300%;">
+        <th>one</th>
+        <th>two</th>
+        <th>three</th>
+        <th>four</th>
+    </thead>
+    <body style="font-size: 100%;">
+    <tr>
+        <td rowspan="2">2one</td>
+        <td>2two</td>
+        <td>2three</td>
+        <td>2four</td>
+    </tr>
+    <tr>
+        <td>3two</td>
+        <td>3three</td>
+        <td>3four</td>
+    </tr>
+    <tr>
+        <td colspan="4">4one</td>
+    </tr>
+    </body>
+</table>
+
+<h1> 5th table </h1>
+<table border="25px" style="color:goldenrod;">
+    <thead style="font: size 250%;">
+        <th>NO</th>
+        <th> FULL NAME</th>
+        <th>PROFILE</th>
+        <th>SALARY</th>
+        <th>TYPE</th>
+    </thead>
+    <tbody style="font: size 200%;">
+        <tr>
+            <td>.1</td>
+            <td>steve jobs</td>
+            <td>founder apple</td>
+            <td>120000</td>
+            <td rowspan="4">company fonder</td>
+        </tr>
+        <tr>
+            <td>.2</td>
+            <td>bill gates</td>
+            <td>founder microsoft</td>
+            <td>100000</td>
+            
+        </tr>
+        <tr>
+            <td>.3</td>
+            <td>larry page</td>
+            <td>founder google</td>
+            <td>110000</td>
+            
+        </tr>
+        <tr>
+            <td>.4</td>
+            <td>mark zuckerberg</td>
+            <td>founder facebook</td>
+            <td>130000</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3" align="center">total expences:</td>
+            <td>460000</td>
+        </tr>
+        </tfoot>
+    </table>
+
+        <h1>6th table with footer tag</h1>
+         <table border="25px" style="color:darkslateblue;">
+            <thead>
+                <th>country</th>
+                <th>state</th>
+                <th>city</th>
+                <th>street</th>
+                <th>male</th>
+                <th>female</th>
+                <th>other</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="8">.1</td>
+                    <td rowspan="4">kerela</td>
+                    <td rowspan="2"> cochin</td>
+                    <td>new street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>main street</td>
+                    <td>300</td>
+                    <td>288</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">trivandrum</td>
+                    <td>guru street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>10</td>
+                </tr> 
+                <tr>
+                    <td>TVK street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">maharashtra</td>
+                    <td rowspan="2">mumbai</td>
+                    <td>krishna street</td>
+                    <td>700</td>
+                    <td>850</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>main street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">surath</td>
+                    <td>new street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>billa street</td>
+                    <td>500</td>
+                    <td>600</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">.2</td>
+                    <td rowspan="2">alaska</td>
+                    <td rowspan="2">AKA central</td>
+                    <td>new street</td>
+                    <td>200</td>
+                    <td>210</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>cross street</td>
+                    <td>1000</td>
+                    <td>1050</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="4" align="center">TOTAL:</td>
+                <td>5200</td>
+                <td>5850</td>
+                <td>41</td>
+            </tfoot>
+         </table>
+         
+
+
+
+
+
+
+
+
+<h1>7th table with jumble rows</h1>
+         <table border="10px" style="color:darkolivegreen" style="font-size: 250%;">
+            <thead style="font-size: 150%;">
+                <tr>
+                <td rowspan="3" align="center">Day</td>
+                <td colspan="5" align="center">Seminar</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"> Schedule</td>
+                    <td rowspan="2" colspan="3" align="center">Topic</td>
+                </tr>
+                <tr> 
+                    <td align="center">Begin</td>
+                    <td align="center">End</td>
+                </tr>
+                </thead>
+            <tbody style="font-size: 120%;">
+                <tr>
+                    <td rowspan="2">monday</td>
+                    <td rowspan="2">8:00 am</td>
+                    <td rowspan="2">5:00 pm</td>
+                    <td colspan="3">introduction XML</td>
+                </tr>
+                <tr>
+                 <td colspan="3"> validity and relax NG</td>
+                </tr>
+
+
+                <tr>
+                    <td rowspan="6">tuesday</td>
+                    <td rowspan="2">8:00 am</td>
+                    <td rowspan="2">11:00 am</td>
+                    <td rowspan="3" colspan="3" align="center">XPath</td>
+                </tr> <!--first empty row is hidden here (1/3)-->
+            <tr></tr> <!--second empty row is here (2/3)  -->
+                <tr>
+                    <td rowspan="2">11:00 am</td>
+                    <td rowspan="2">2:00 pm</td>
+                     
+                </tr> <!--third row is here (3/3) upto here XPath is occupied its 3 rowspan, one row is still there-->
+                
+
+                <!--first empty row is hidden here (1/3)-->
+                <tr>
+                    <td rowspan="3" colspan="3" align="center">XSL</td> </tr>
+                <tr>
+                    <td rowspan="2">2:00 pm</td>
+                    <td rowspan="2">5:00 pm</td>
+                </tr>   <!--second empty row is here (2/3)-->
+                <tr></tr>  <!--third empty row is hidden here (3/3)-->
+                <tr>
+                <td>Wednesday</td>
+                <td>8:00 am</td>
+                <td>12:00 pm</td>
+                <td>XSL formatting object</td>                     
+                </tr>
+            </tbody>
+         </table>
+
+
+
+
+
+
+<h1>8th table with jumble rows</h1>
+<table border="10px" style="color:darkolivegreen;">
+    
+        <thead style="font-size: 50px;"> <th colspan="4"> Table with rowspan and colspan</th></thead>
+        <tbody style="font-size: 50px;">
+    <tr>
+        <td rowspan="6">Rates</td>
+        <td rowspan="2">apple</td>
+        <td rowspan="2">12p</td>
+        <td rowspan="3"> RS 150</td>
+    </tr>  <!--1/6-->
+    <tr></tr>   <!--2/6-->
+     <tr>
+        <td rowspan="2">banana</td>
+        <td rowspan="2">24p</td>
+     </tr>     <!--3/6-->
+        <tr> <td rowspan="3">RS 80</td></tr>    <!--4/6-->
+      <tr>  
+        <td rowspan="2">grapes</td>
+        <td rowspan="2">1 Kg</td>
+      </tr>  <!--5/6-->
+      <tr></tr>   <!--6/6-->
+            </tbody>
+</table>
+</html>

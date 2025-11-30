@@ -1,0 +1,364 @@
+<!--
+                 HTML   BASIC   TAGS
+Short cut keys (emmet abrivations  visit website) 
+
+!           press enter
+
+html      press enter 
+
+html5    press enter
+
+! +        press enter
+
+html:xml     press enter -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+ 
+<html>   </html> :
+this is structural tag of html page. 
+ 
+<head>   </head> :
+this head is place between html and body tag 
+to perform metadeta operation like styling, scripting, titile.
+ 
+<title> one123 </title> : 
+its display titile on browser toolbar http:/one123
+
+ <body>   </body> :
+its contain all element in web page except head & title. 
+
+<h1>     </<h1> 
+  "        "
+<h6>     </h6> :
+ its create heading with 6  different font sizes.
+
+ <br> :
+ To brake the line of any elements.
+
+Formatting elements 
+Formatting elements were designed to display special types of text:
+
+    <b> - Bold text
+    <strong> - Important text
+    <i> - Italic text
+    <u>  - underline the text 
+    <em> - Emphasized text
+    <mark> - Marked text
+    <small> - Smaller text
+    <del> - Deleted text
+    <s>  - strick the text 
+    <ins> - Inserted text
+    <sub> - Subscript text
+    <sup> - Superscript text
+    <pre> - this tag show paragraph as it is as written.
+    <code> - basically every tag element is recognized by code editor and perform relavent
+     action but we want to display some elements in paragraph so we use <code> tag. 
+
+ 
+
+<hr> (HORIZONTAL LINE):
+<p> its create horizontal line one a webpage</p> 
+<hr>
+<p> its create horizontal line one a webpage</p> 
+ 
+Random text (Lorem method)
+<p> lorem50  </p>     !press enter 
+its create random text for paragraph we can put rang 50,100,10000 word etc.
+link tag (anchor tag)
+ 
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+
+<a href="https://www.google.com"> click to visit google </a>
+ 
+DETAIL TAG :
+<Detail>
+
+<summary>this text is displayed on screen to expand it we need to click on it 
+
+to get detailed </summary>  <p> this paragraph is displayed  after clicking displayed text</p> </detail>   
+IMAGE TAG
+
+<img src="location of the image" width="--px"  height="--px"> 
+
+COMMENT TAG
+<h1>Comment Tag</h1> 
+<!--this is a comment tag--> 
+ 
+ PARAGRAPH TAG
+<p align="bottom" align="left" align="right" align="center" ></p> 
+
+ID ATTRIBUTE
+<P id="firstId"> we can use this id name at the time of styling with Css
+
+<style> 
+In CSS #firstId
+{
+color="blur" 
+} </style>  
+
+CLASS ATTRIBUTE
+<p class="FirstClass">this paragraph with class attribute</P>
+
+In CSS  <style> 
+.FirstClass
+{
+color="green" 
+} </style>
+
+BOOLEAN ATTRIBUTE (form tags)
+
+<input type="text"  required>
+<!-- by entering "required" keyword its become mandatory to fill-->  
+
+<input type="text"  disabled>
+<!-- by entering "disabled" keyword its become disabled to fill-->  
+ 
+ LINKS TAG 
+<h2>hyperlink is used to created link to another page <h2/>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Click here for HTML doc</a><br> 
+
+
+        <!--tag is used to expand the particular content like by clicking Question, below its show answer-->
+    <h2>this is a details tag functionality</h2>
+    <details>
+        <summary>Question: what software engineer do in real life..?</summary>
+        <p>software engineer who design and build software products <br/>
+            like:mobile app, websites,modern solutions etc.    </p>
+    </details>
+
+
+ORDERED LIST TAG 
+     <h2>this is one type of ordered list where list is represent
+ as a alphabet or numeric bullet point</h2>
+    <!--this is one type of ordered list where list items contain links-->
+<ol class="nav">
+  <li style="color:red;"><a href="#home" style="color:orange;">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#clients">Our Clients</a></li>  
+  <li><a href="#contact">Contact Us</a></li>
+</ol>
+
+
+un oredered list tag
+ <h2>this is unordered list where list is represent as a regular bullet point</h2>
+    <!--this is unordered list where list items contain links-->
+<ul class="nav">
+  <li style="color:red;"><a href="#home" style="color:orange;">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#clients">Our Clients</a></li>  
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
+ 
+ BOOKMARKS TAG
+<h2> here we are using that ID name to crate a bookmark it help to locate that id paragraph in a lengthy webpage </h2>
+<a href="#last">click to scroll down</a><br>
+<br>
+ <br>
+
+
+
+ TEXT & BACKGROUND COLOR TAG 
+<h2>applying text and background-color within body tag
+ with same pattern just instead of using {} use "" </h2>
+<body style="background-color: skyblue; color:red;  font-size:50px;">
+<br/>
+ 
+ 
+<h2>applying text and background-color to body in CSS 
+style section its allow as to apply multiple
+ style operation on one element. </h2>
+  
+<html>
+<head>
+        <style>
+          body {
+                 background-color:brown;
+                 color:red;
+                 font-size:50px;
+                             } 
+        </style 
+</head> 
+<body>  <p> hhdjfkjksfdkhjkdfhjkfd </p>
+ </body>
+
+</html>
+ 
+ 
+ CHECK BOX TAG
+<h2>its create checkbox </h2>
+    <input type="checkbox" id="terms" name="terms">       
+        <label for="terms">Accept Terms and Conditions</label>
+ Description list tags
+ 
+ IMAGE TAG
+ <h2>image tag with its parameters</h2>
+<!-- The loading="lazy" attribute specifies whether a browser should load an image immediately or to defer loading of off-screen 
+ images until for example the user scrolls near them.
+Tip: Add loading="lazy" only to images which are positioned below the fold.-->
+
+<img src ="photo2.jpeg" height="300" width="400" alt="image is loading..." loading="lazy">
+<br/>
+ 
+AUDIO TAG
+<h2>Audio Tag with controls attribute</h2>
+<audio src="audio1.mp3" controls></audio>  
+<br>
+
+
+DISCRIPTION LIST
+<html>
+<body>
+<h1>The dl, dd, and dt elements</h1>
+<p>These three elements are used to create a description list:</p>
+<dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+</dl>
+</body>
+</html>
+
+
+DIV TAGS
+div tag is used to create new divisions of elements in a whole webpage and we 
+can assign saperate properties like font, color etc in particular section without
+effecting other section with the help of div tag.  
+but we need to assign div id or div class to work between multiple divs. 
+ 
+
+ID:
+<style> #myDiv { color:green; }   </style>
+<div id="myDiv">
+
+
+CLASS:
+<style>  .myDiv { color:blue;  }  </style>
+<div class="myDiv">
+BLOCK & INLINE ELEMENTS
+
+Every HTML element has a default display value, depending on what type 
+of element it is.The two most common display values are block and inline.
+
+*****block*****
+
+A block-level element always takes up the full width available.
+
+A block-level element always starts on a new line, and the browsers 
+automatically add some space (a margin) before and after the element. 
+
+Here are the block-level elements in HTML:
+<address> <article> <aside> <blockquote>  <canvas>  <dd>   <div>   <dl>
+<dt>  <fieldset>  <figcaption>   <figure>  <footer>  <form>   <h1>-<h6>
+<header>   <hr>   <li>   <main>  <nav>  <noscript>  <ol>   <p>   <pre>
+<section>  <table>  <tfoot>   <ul>   <video>
+ 
+*****inline****
+ An inline element does not start on a new line.
+ An inline element only takes up as much width as necessary.
+
+Here are the inline elements in HTML:
+<a>  <abbr>  <acronym>  <b>  <bdo>  <big>  <br>  <button>   <cite>
+<code>  <dfn>  <em>  <i>   <img>   <input>  <kbd>   <label>  <map>
+<object>   <output>   <q>  <samp>   <script>  <select>  <small>  <span>
+<strong>   <sub>  <sup>  <textarea>  <time>   <tt>   <var>
+The display: inline-block Value in css
+*Display: inline = manage all elements in same line & start with same line.
+*Display: block = every time its manage element in new line and take full width.
+*Display: inline-block = 
+
+Compared to display: inline, the major difference is that display: inline-block allows 
+to set a width and height on the element.
+
+Compared to display: block, the major difference is that display: inline-block does 
+not add a line-break after the element, so the element can sit next to other 
+elements.
+
+One common use for display: inline-block 
+is to display list items horizontally instead of vertically. 
+
+ 
+
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>hyperlink is used to created link to another page <h2/>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Click here for HTML doc</a><br> 
+
+    <!--details tag is used to expand the particular content like by clicking Question, below its show answer-->
+    <h2>this is a details tag functionality</h2>
+    <details>
+        <summary>Question: what software engineer do in real life..?</summary>
+        <p>software engineer who design and build software products <br/>
+            like:mobile app, websites,modern solutions etc.    </p>
+    </details>
+
+
+
+    <h2>this is one type of ordered list where list items contain links</h2>
+    <!--this is one type of ordered list where list items contain links-->
+<ol class="nav">
+  <li "font:red;"><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#clients">Our Clients</a></li>  
+  <li><a href="#contact">Contact Us</a></li>
+</ol>
+
+
+
+<h2> here we are using that ID name to crate a bookmark it help to locate that id paragraph in a lengthy webpage </h2>
+<a href="#last">click to scroll down</a><br>
+<br>
+ <br>
+
+
+<h2>applying background-color to body tag</h2>
+<body style="background-color: skyblue;">
+
+    
+</body>
+<br/>
+
+
+<h2>its create checkbox </h2>
+    <input type="checkbox" id="terms" name="terms">       
+        <label for="terms">Accept Terms and Conditions</label>
+
+
+<h1>Media Tags</h1>
+
+ <h2>image tag with its parameters</h2>
+<!-- The loading="lazy" attribute specifies whether a browser should load an image immediately or to defer loading of off-screen 
+ images until for example the user scrolls near them.
+Tip: Add loading="lazy" only to images which are positioned below the fold.-->
+
+<img src ="photo2.jpeg" height="300" width="400" alt="image is loading..." loading="lazy">
+<br/>
+
+<h2>Audio Tag with controls attribute</h2>
+<audio src="audio1.mp3" controls></audio>  
+<br>
+<!--another method for adding audio
+<audio control>
+    <source src="audio1.mp3" type=audio/mp3>
+</audio>   -->
+
+</body>
+</html>
